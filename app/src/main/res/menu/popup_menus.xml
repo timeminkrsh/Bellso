@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:enabled="true"
+        android:title="Product Delivery, Damage and quality"
+        />
+    <item
+        android:enabled="true"
+        android:title="payoutrelated "
+        />
+    <item
+        android:enabled="true"
+        android:title="wallet related"
+        />
+    <item
+        android:enabled="true"
+        android:title="OTP Issues "
+        />
+    <item
+        android:enabled="true"
+        android:title="Failed Transaction"
+        />
+    <item
+        android:enabled="true"
+        android:title="Offer and promotions "
+        />
+    <item
+        android:enabled="true"
+        android:title="Member login and add member"
+        />
+    <item
+        android:enabled="true"
+        android:title="Meeting and events"
+        />
+    <item
+        android:enabled="true"
+        android:title="Mobile App and Website"
+        />
+    <item
+        android:enabled="true"
+        android:title="Health Insurance"
+        />
+
+    <item
+        android:enabled="true"
+        android:title="Vehicle Insurance "
+        />
+    <item
+        android:enabled="true"
+        android:title="Others"
+        />
+</menu>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taprocycle.service.PayoutSummaryActivity">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="191dp"
+            android:layout_height="@dimen/payu_dimen_30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:text="    Bank  Details"
+            android:textColor="#B9000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Name"
+                    android:textColor="#B9000000"
+                    android:textSize="16sp"
+                    android:gravity="bottom"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text=":"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Manic"
+                    android:maxLines="2"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Bank"
+                    android:gravity="bottom"
+                    android:textColor="#B9000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="19dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/bank"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="ICICIBank"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Branch"
+                    android:gravity="bottom"
+                    android:textColor="#B9000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="19dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/branch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Kovilambakkam"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/lato"
+                    android:text="IFSC"
+                    android:textColor="#B9000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="19dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/ifscnumber"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="IDFB0080911"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/lato"
+                    android:text="Account Number"
+                    android:layout_marginStart="@dimen/payu_dimen_10dp"
+                    android:textColor="#B9000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/accountnumber"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="123455453"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/lato"
+                    android:text="PAN Number"
+                    android:layout_marginStart="@dimen/payu_dimen_10dp"
+                    android:textColor="#B9000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/pan_number"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"                    android:layout_height="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:text="123455453"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/separateodr"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:scaleX="10"
+            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/lato"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_weight="0"
+
+                android:fontFamily="@font/lato"
+                android:text="Details"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/lato"
+                android:text="Amount"
+
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0"
+
+                android:fontFamily="@font/lato"
+                android:text="Less TDS"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="@dimen/payu_dimen_100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+
+                android:fontFamily="@font/lato"
+                android:text="Net Amount"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/payu_dimen_10dp"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/lin"
+            android:layout_marginStart="5dp"
+            android:background="@color/black"
+            android:scaleX="10" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_transaction_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_margin="@dimen/payu_dimen_5dp"
+            tools:listitem="@layout/payout_history" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taprocycle.service.Activity.EventActivity">
+    <RadioButton
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/radio"
+        app:cardCornerRadius="@dimen/payu_dimen_10dp">
+        imag
+        <ImageView
+            android:id="@+id/bannerimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/events"/>
+        <ImageView
+            android:id="@+id/imag"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/events"/>
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_below="@+id/cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Diamond Showcase"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/event_location"
+            android:layout_below="@+id/event_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Madurai"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:id="@+id/As_mahal"
+            android:layout_below="@+id/event_location"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="AS Mahal"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/As_mahal"
+
+            android:textStyle="normal"
+            android:text="24.05.2022, 10am"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/payu_dimen_20dp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/event_date"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_below="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <TextView
+                android:id="@+id/photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="photos"
+                android:layout_margin="@dimen/payu_dimen_5dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:padding="@dimen/payu_dimen_10dp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Videos"
+                android:layout_margin="@dimen/payu_dimen_5dp"
+                android:padding="@dimen/payu_dimen_10dp"
+                android:textSize="18sp"
+                android:background="@drawable/button"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/lin"
+        android:id="@+id/recycleview_photo"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/photos_items"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_videos"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <!--<com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            style="@style/MyTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabTextColor="@color/colorPrimary" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+</RelativeLayout>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Active Customers"
+                android:padding="@dimen/payu_dimen_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/payu_dimen_20dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/member_id"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/editaddress_border"
+                    android:fontFamily="@font/lato"
+                    android:hint="LEDGER ID"
+                    android:padding="15dp"
+                    android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/search_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:text="Search"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/payu_dimen_15dp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/left"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/gradient_border"
+                    android:fontFamily="@font/lato"
+                    android:padding="5dp"
+                    android:text="LEFT"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lcount"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/right"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/gradient_border"
+                    android:fontFamily="@font/lato"
+                    android:padding="5dp"
+                    android:text="RIGHT"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rcount"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/right"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/lato"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="@dimen/payu_dimen_100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/gradient_border"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="TOTAL"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/gradient_border"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="PV REPORT"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/editaddress_border"
+                    android:fontFamily="@font/lato"
+                    android:hint="LEDGER ID"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/arrow_circle" />
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+             <!--   <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="Id"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:fontFamily="@font/lato"
+                        android:text="Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="CFL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/payu_dimen_50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="CFR"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/payu_dimen_50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="CWL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/payu_dimen_50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="CWR"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="TL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="TR"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="MPV"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="PP"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+                </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_transaction_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/pvreport_list" />
+            </LinearLayout>
+                </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/editaddress_border"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <CalendarView
+                    android:id="@+id/simpleCalendarView"
+                    android:layout_width="fill_parent"
+                    android:visibility="visible"
+                    android:showWeekNumber="true"
+                    android:layout_height="fill_parent" />
+               <CalendarView
+                    android:id="@+id/simpleCalendarView2"
+                    android:layout_width="fill_parent"
+                    android:visibility="gone"
+                    android:layout_height="fill_parent" />
+                <EditText
+                    android:id="@+id/fromcalantor"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/gradient_border"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:focusable="false"
+                    android:fontFamily="@font/lato"
+                    android:hint="Week  from"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tocalentor"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:focusable="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/gradient_border"
+                    android:fontFamily="@font/lato"
+                    android:hint="Week   To"
+                    android:textColorHint="@color/white"
+                    android:padding="5dp"
+                    android:drawableEnd="@android:drawable/arrow_down_float"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/report_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/pvreport_list" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/addmeber_id"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/editaddress_border"
+                    android:fontFamily="@font/lato"
+                    android:hint="LEDGER ID"
+                    android:padding="15dp"
+                    android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/Add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/payu_dimen_15dp"
+                    android:padding="@dimen/payu_dimen_5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/add_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:scrollbars="none"
+                tools:listitem="@layout/pvreport_list" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

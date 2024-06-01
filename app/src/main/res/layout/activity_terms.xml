@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TermsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/payu_dimen_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="PLEASE CAREFULLY READ THESE TERMS OF USE, INCLUDING THE BINDING ARBITRATION PROVISION THAT REQUIRES MOST DISPUTES TO BE ARBITRATED ON AN INDIVIDUAL BASIS (SEE SECTION 19) AND THE CLASS ACTION AND JURY TRIAL WAIVER (SEE SECTION 20). IN ARBITRATION THERE IS NO JUDGE OR JURY AND THERE IS LESS DISCOVERY AND APPELLATE REVIEW THAN IN COURT. THESE PROVISIONS AFFECT YOUR RIGHTS."
+                android:padding="5dp"
+                android:layout_marginEnd="@dimen/payu_dimen_5dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="PLEASE NOTE THAT YOUR USE AND ACCESS TO OUR SERVICES (DEFINED BELOW) ARE SUBJECT TO THE FOLLOWING TERMS; IF YOU DO NOT AGREE TO ALL OF THE FOLLOWING, YOU MAY NOT USE OR ACCESS THE SERVICES IN ANY MANNER."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="For information on your data rights and our data collection, use and sharing processes as you interact with our Services please consult our Privacy Statement."
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Bell sports India, its subsidiaries and affiliates, including its family of companies and brands, such as mobile applications (the “Apps”) and stores, and use and/or participate in social media sites, digital advertising and emails (collectively, the “Services”). These Terms of Use (“Terms”) and our Privacy Statement (which is expressly incorporated herein by reference), contain the rules and restrictions that govern your use of our Services, and constitute a binding agreement between you and us. Please read these Terms, as well as our Privacy Statement, carefully. They contain important information about the products and/or Services provided to you and our use of certain information. "
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Thank you for using our Services. By using or accessing our Services and interacting with our digital operations, including our Sites, Apps, social media and digital advertising, you signify your consent to these Terms and our Privacy Statement. If you do not agree to these Terms and Privacy Statement, you may not use or access the Services in any manner."
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="We reserve the right, at our discretion, to change, modify, add, or remove portions of these Terms at any time. Please check these Terms periodically for changes. Your continued access or use of the Services following the posting of changes to these Terms (including our Privacy Statement) constitutes your agreement to them."
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/payu_dimen_40dp"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

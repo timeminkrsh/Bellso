@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter By"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/two_below"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rs. 299 and Below" />
+
+            <RadioButton
+                android:id="@+id/three_four"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rs. 300 - Rs. 499" />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <RadioButton
+                android:id="@+id/five_six"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rs. 500 - Rs. 699" />
+
+            <RadioButton
+                android:id="@+id/seven_nine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                android:text="Rs. 700 - Rs. 999" />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radiogroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <RadioButton
+                android:id="@+id/ten_forteen"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rs. 1000 - Rs.1499"
+                />
+            <RadioButton
+                android:id="@+id/fifteen_thousand"
+                android:layout_width="0dp"
+                android:layout_weight="1"                android:layout_height="wrap_content"
+                android:text="Rs. 1500 - Rs.1999"
+                />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radiogroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <RadioButton
+                android:id="@+id/two_two"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Rs. 2000 - Rs. 2499"
+                />
+            <RadioButton
+                android:id="@+id/two_above"
+                android:layout_width="0dp"
+                android:layout_weight="1"                android:layout_height="wrap_content"
+                android:text="Rs. 2500 and above"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

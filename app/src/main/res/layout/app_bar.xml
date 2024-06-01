@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <!--<ImageView
+            android:id="@+id/menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:tint="@color/white"
+            android:src="@drawable/menu" />-->
+
+        <ImageView
+            android:id="@+id/loho"
+            android:layout_width="@dimen/payu_dimen_100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/txt_appname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/payu_dimen_30dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    app:cardCornerRadius="@dimen/payu_dimen_90dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp">
+
+                    <ImageView
+                        android:id="@+id/oho"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/logo" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/payu_dimen_5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/raleway"
+                    android:gravity="start"
+                    android:text="Bellsports"
+                    android:textColor="@color/yellow"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="@dimen/payu_dimen_20dp"
+                    android:layout_height="@dimen/payu_dimen_20dp"
+                    android:src="@drawable/notify"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/payu_dimen_10dp"
+                    app:tint="@color/yellow" />
+            </LinearLayout>
+
+
+
+                <!--<ImageView
+
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="22dp"
+                    android:src="@drawable/cartempty" />
+
+                <TextView
+                    android:id="@+id/badge_notification"
+                    android:layout_width="@dimen/payu_dimen_20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="@drawable/white_round_border"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />-->
+
+
+            <ImageView
+                android:layout_width="@dimen/payu_dimen_30dp"
+                android:layout_height="@dimen/payu_dimen_30dp"
+                android:src="@drawable/notify"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cart1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_appname"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/search_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1.8"
+                android:backgroundTint="@color/yellow"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:layout_marginTop="@dimen/payu_dimen_10dp"
+                android:background="@drawable/white_border">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/payu_dimen_10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/search"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center_vertical"
+                    android:hint="Search for Cycle and Sports items"
+                    android:paddingStart="@dimen/payu_dimen_10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                     android:layout_marginEnd="5dp"
+                    android:src="@drawable/heart"
+                    app:tint="@color/yellow" />
+
+                <TextView
+                    android:id="@+id/heart_notification"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignRight="@id/img_heart"
+                    android:background="@drawable/item_count"
+                    android:gravity="center"
+                    android:text="0"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cart"
+                android:layout_width="@dimen/payu_dimen_50dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/payu_dimen_5dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/payu_dimen_10dp"
+                android:background="@drawable/button">
+
+                <include layout="@layout/layout_allcart" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="3dp"
+        android:indeterminate="false"
+        android:maxHeight="10dip"
+        android:minHeight="10dip"
+        android:progress="50"
+        android:progressDrawable="@drawable/multiprogress"
+        android:visibility="gone" />
+    
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/swipe">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/idNetedSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/payu_dimen_60dp"
+            android:layout_below="@+id/rel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/closed_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/payu_dimen_20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/undercons" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="We are closed now, please check tomorrow"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:visibility="gone"
+                        android:text="To view your order details, Menu -&gt; MyOrders"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/idNestedSV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/lato"
+                        android:text="Shop by Category"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_category"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="@dimen/payu_dimen_5dp"
+                                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                                android:scrollbars="none"
+                                tools:listitem="@layout/layout_categorys_home"/>
+
+                            <RelativeLayout
+                                android:id="@+id/offer_cat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="125dp"
+                                android:padding="@dimen/payu_dimen_5dp"
+                                android:layout_marginTop="@dimen/payu_dimen_5dp"
+                                android:layout_marginEnd="@dimen/payu_dimen_5dp"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="@dimen/payu_dimen_90dp"
+                                    android:layout_height="110dp"
+                                    app:cardCornerRadius="@dimen/payu_dimen_10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="@dimen/payu_dimen_70dp"
+                                            android:layout_height="@dimen/payu_dimen_70dp"
+                                            app:cardCornerRadius="@dimen/payu_dimen_90dp"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/card_img">
+
+                                            <FrameLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="@dimen/payu_dimen_10dp"
+                                                android:background="@drawable/gradient">
+
+                                                <ImageView
+                                                    android:id="@+id/kit1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/offers" />
+
+                                            </FrameLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                        <TextView
+                                            android:id="@+id/textcat"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/card_img"
+                                            android:textStyle="bold"
+                                            android:textSize="12sp"
+                                            android:fontFamily="@font/raleway"
+                                            android:text="Offer"
+                                            android:layout_marginTop="2dp"
+                                            android:layout_centerInParent="true"
+                                            android:gravity="center"
+                                            android:lines="1"
+                                            android:textColor="@color/black"
+                                            android:layout_centerHorizontal="true" />
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/payu_dimen_200dp"
+                        android:layout_margin="5dp"
+                        tools:cardElevation="2"
+                        android:backgroundTint="@color/grey"
+                        tools:cardMaxElevation="2">
+
+                        <com.synnapps.carouselview.CarouselView
+                            android:id="@+id/banner_carousal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/payu_dimen_200dp"
+                            android:scaleType="fitXY"
+                            android:visibility="visible" />
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/payu_dimen_200dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <!--app:sliderAnimationDuration="600"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorEnabled="true"
+                        app:sliderIndicatorMargin="5dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorMarginTop="@dimen/payu_dimen_5dp"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1"-->
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/titles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/payu_dimen_5dp"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/payu_dimen_5dp"
+                                android:layout_weight="1"
+                                android:autoSizeTextType="none"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:text="TRENDING ACCESSORIES"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/txt_viewall"
+                                android:layout_width="50dp"
+                                android:layout_height="@dimen/payu_dimen_40dp"
+                                android:text="View All"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:autoSizeTextType="none"
+                                android:layout_weight="1"
+                                android:visibility="visible"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/c4"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:background="@drawable/button"/>
+
+                            <Button
+                                android:id="@+id/txt_viewless"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/payu_dimen_40dp"
+                                android:text="View Less"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/c4"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:background="@drawable/button"/>
+
+                        </LinearLayout>
+
+
+                        <!--<ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/payu_dimen_80dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bellban"/>-->
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_products"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:scrollbars="none"
+                            tools:listitem="@layout/productlist" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:layout_marginTop="@dimen/payu_dimen_5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/payu_dimen_5dp"
+                                android:fontFamily="@font/lato"
+                                android:padding="@dimen/payu_dimen_5dp"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:text="RECENTLY ADDED"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btn_viewall"
+                                android:layout_width="50dp"
+                                android:layout_height="@dimen/payu_dimen_40dp"
+                                android:text="View All"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:visibility="visible"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/c4"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:background="@drawable/button"/>
+
+                            <Button
+                                android:id="@+id/btn_viewless"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/payu_dimen_40dp"
+                                android:text="View Less"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/lato"
+                                android:textColor="@color/c4"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:background="@drawable/button"/>
+
+                        </LinearLayout>
+
+
+                        <!--<ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/payu_dimen_80dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bellban"/>-->
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_sale"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:scrollbars="none"
+                            tools:listitem="@layout/bestsalelist" />
+
+                    </LinearLayout>
+
+
+
+                    <!--
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/gray"
+                                android:layout_marginTop="@dimen/payu_dimen_10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/payu_dimen_5dp"
+                                        android:fontFamily="@font/lato"
+                                        android:padding="@dimen/payu_dimen_5dp"
+                                        android:layout_weight="1"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"
+                                        android:text="RECENTLY ADDED"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/btn_viewall"
+                                        android:layout_width="80dp"
+                                        android:layout_height="@dimen/payu_dimen_50dp"
+                                        android:text="View All"
+                                        android:textStyle="bold"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:visibility="visible"
+                                        android:textAlignment="center"
+                                        android:fontFamily="@font/lato"
+                                        android:textColor="@color/c4"
+                                        android:layout_margin="@dimen/payu_dimen_10dp"
+                                        android:background="@drawable/button"/>
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_sale"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:scrollbars="none"
+                                    tools:listitem="@layout/bestsalelist" />
+
+                            </LinearLayout>
+                    -->
+
+                    <ImageView
+                        android:id="@+id/empty_product"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/boxempty"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:visibility="gone" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+  <!--  <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/customBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#003049"
+        app:itemIconTint="@color/white"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/activity_main_drawer" />-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="#FFF"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/home_lin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/home_img"
+                    android:layout_width="@dimen/payu_dimen_30dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/home"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accessories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/history_img"
+                    android:layout_width="@dimen/payu_dimen_30dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/assce" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bikes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="@dimen/payu_dimen_30dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bicycle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bikes"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/rental"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ren"
+                    android:layout_width="@dimen/payu_dimen_30dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/account" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/mo"
+                    android:layout_width="@dimen/payu_dimen_30dp"
+                    android:layout_height="@dimen/payu_dimen_30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

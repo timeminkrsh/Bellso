@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/frame_subbbbb"
+    tools:context=".Fragment.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Create a new Account"
+          android:textStyle="bold"
+          android:textSize="30sp"
+          android:textColor="#114A9E"
+          android:layout_marginTop="30sp"
+          android:fontFamily="@font/lato"
+          android:textAlignment="center"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/login_edit_border"
+          android:padding="15dp"
+          android:hint="First Name"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/login_edit_border"
+          android:padding="15dp"
+          android:hint="Last Name"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/login_edit_border"
+          android:padding="15dp"
+          android:hint="Email *"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/login_edit_border"
+          android:padding="15dp"
+          android:hint="Password *"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/login_edit_border"
+          android:padding="15dp"
+          android:hint="Confirm Password *"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginStart="15dp">
+          <CheckBox
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="I agree to the licence and terms "
+              android:textColor="@color/black"
+              android:fontFamily="@font/lato"
+              android:textStyle="bold"/>
+
+      </LinearLayout>
+      <TextView
+          android:id="@+id/login"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/common_border"
+          android:padding="15dp"
+          android:text="Create Account"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+</LinearLayout>
+      <ImageView
+          android:layout_width="200dp"
+          android:layout_height="130dp"
+          android:src="@drawable/login_back"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentBottom="true"
+          />
+  </RelativeLayout>
+</FrameLayout>

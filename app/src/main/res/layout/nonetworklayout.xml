@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/network" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Internet Connection"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"/>
+    <Button
+        android:id="@+id/Retry"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/subcate_border"
+        android:fontFamily="@font/lato"
+        android:text="Retry"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/payu_dimen_30dp"
+        />
+
+</LinearLayout>

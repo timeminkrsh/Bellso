@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderConfirm"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/payu_dimen_250dp"
+                android:src="@drawable/right"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thank You!!!"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/payu_dimen_20dp"
+                android:padding="@dimen/payu_dimen_5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="You Order Has Been Confirmed"
+                android:layout_marginTop="@dimen/payu_dimen_10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/payu_dimen_20dp"
+                android:padding="@dimen/payu_dimen_5dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                android:layout_margin="@dimen/payu_dimen_10dp"
+                app:cardCornerRadius="@dimen/payu_dimen_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/payu_dimen_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/payu_dimen_150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lato"
+                            android:text="Order ID "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:padding="@dimen/payu_dimen_5dp"/>
+
+                        <TextView
+                            android:id="@+id/orderid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=" "
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/payu_dimen_150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Total Amount "
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/lato"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:padding="@dimen/payu_dimen_5dp"/>
+
+                        <TextView
+                            android:id="@+id/totalamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/lato"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/payu_dimen_150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Payment Mode "
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/lato"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=":"
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:padding="@dimen/payu_dimen_5dp"/>
+
+                        <TextView
+                            android:id="@+id/paymentmode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=" "
+                            android:textColor="@color/black"
+                            android:textStyle="normal"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/lato"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextborder"
+                android:layout_margin="@dimen/payu_dimen_5dp"
+                android:padding="@dimen/payu_dimen_5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/payu_dimen_250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/orderidddd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Order id                :"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/payu_dimen_20dp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+                    <TextView
+                        android:id="@+id/orderid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="order id"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/payu_dimen_18sp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/payu_dimen_250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/orderiddddss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Total Amount      :"
+                        android:layout_marginTop="@dimen/payu_dimen_20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/payu_dimen_20dp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+                    <TextView
+                        android:id="@+id/totalamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:layout_marginTop="@dimen/payu_dimen_20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/payu_dimen_18sp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/payu_dimen_250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/paa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Payment Mode    :"
+                        android:layout_marginTop="@dimen/payu_dimen_20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/payu_dimen_20dp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+                    <TextView
+                        android:id="@+id/paymentmode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="COD"
+                        android:layout_marginTop="@dimen/payu_dimen_20dp"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/payu_dimen_18sp"
+                        android:padding="@dimen/payu_dimen_5dp"/>
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/payu_dimen_15dp"
+                android:padding="@dimen/payu_dimen_5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text="View Order Details"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/bt_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/payu_dimen_5dp"
+                android:layout_marginTop="@dimen/payu_dimen_15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text="Continue Shopping"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

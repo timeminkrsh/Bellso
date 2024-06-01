@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taprocycle.service.Activity.ShopbyCategoryActivity">
+
+    <include layout="@layout/toolbar_product" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/progresstop"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFEB3B"
+        android:dividerHeight="0.5dp"
+        android:groupIndicator="@null"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+
+
+
+</LinearLayout>

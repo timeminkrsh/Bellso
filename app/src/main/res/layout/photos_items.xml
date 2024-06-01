@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/photos_border">
+
+<ImageView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="2dp"
+        android:src="@drawable/logo" />
+
+   <!-- <TextView
+        android:id="@+id/event_title"
+        android:layout_below="@id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_centerInParent="true"/>-->
+    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="110dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center" />-->
+</RelativeLayout>

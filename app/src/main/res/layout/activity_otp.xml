@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.taprocycle.service.Activity.LoginActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payu_dimen_250dp"
+        android:layout_marginTop="@dimen/payu_dimen_30dp"
+        android:layout_marginBottom="@dimen/payu_dimen_30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/layput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ret"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/payu_dimen_15dp"
+            android:text="OTP Verification Code"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/ot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/payu_dimen_15dp"
+            android:gravity="center"
+            android:padding="@dimen/payu_dimen_5dp"
+            android:text="Enter OTP\n\n We have sent a OTP on your number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/payu_dimen_18sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/payu_dimen_40dp"
+            android:layout_below="@+id/ot"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_otp1"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:background="@drawable/edittextborder"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_otp2"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/edittextborder"
+                android:textColor="@color/black"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_otp3"
+                android:layout_width="50dp"
+                android:background="@drawable/edittextborder"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/edit_otp4"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+
+                android:inputType="number"
+                android:background="@drawable/edittextborder"
+                android:maxLength="1" />
+
+        </LinearLayout>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinview"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ot"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:itemBackground="@color/white"
+            app:hideLineWhenFilled="false"
+            app:itemCount="4"
+            app:itemHeight="50dp"
+            app:itemRadius="10dp"
+            app:itemWidth="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pinview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/payu_dimen_15dp"
+            android:background="@drawable/button"
+            android:padding="@dimen/payu_dimen_10dp"
+            android:text="Verify OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

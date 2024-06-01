@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cv_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardElevation="1dp"
+    card_view:cardMaxElevation="1dp"
+    card_view:contentPadding="5dp"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:inputType="textMultiLine"
+                    android:text="Briyani masala"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lato"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="textMultiLine"
+                android:text="Briyani masala"
+                android:textColor="#B7000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:text="₹ 150"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/lato"
+                        />
+                    <TextView
+                        android:id="@+id/mrp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="15dp"
+                        android:text="₹ 200"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/lato"
+                        />
+
+                    <TextView
+                        android:id="@+id/saveprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="15dp"
+                        android:text="Save Price"
+                        android:textColor="#23AE29"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/lato"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/llay_cart"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato"
+                        android:padding="5dp"
+                        android:text="-"
+                        android:background="@drawable/addborder"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/tv_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_add1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/lato"
+                        android:padding="5dp"
+                        android:text="ADD"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato"
+                        android:padding="5dp"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        android:background="@drawable/addborder"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/grayyy"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/rel_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tag" />
+
+        <TextView
+            android:id="@+id/offer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato"
+            />
+    </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

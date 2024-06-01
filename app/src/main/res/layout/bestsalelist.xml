@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/payu_dimen_200dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/payu_dimen_10dp"
+        android:layout_marginTop="@dimen/payu_dimen_10dp"
+        android:layout_marginEnd="@dimen/payu_dimen_10dp"
+        android:layout_marginBottom="@dimen/payu_dimen_10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardElevation="2"
+        card_view:cardMaxElevation="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Head Lights"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titlee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button"
+            android:fontFamily="@font/lato"
+            android:padding="5dp"
+            android:text=" ₹ 185"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

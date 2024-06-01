@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayyy"
+    tools:context=".Activity.AccountActivity">
+
+    <include layout="@layout/toolbar_notify"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_notify" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_prof"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="@dimen/payu_dimen_10dp"
+                    app:cardCornerRadius="@dimen/payu_dimen_10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/payu_dimen_10dp">
+
+                        <ImageView
+                            android:id="@+id/img_prof"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/account"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_toRightOf="@+id/img_prof">
+
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center"
+                                android:text="My name"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_phn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_name"
+                                android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                                android:fontFamily="@font/lato"
+                                android:gravity="center"
+                                android:text="7895461230"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cv_prof"
+                    android:layout_margin="@dimen/payu_dimen_15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/cv_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/cv_setting"
+                            android:weightSum="2"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:fontFamily="@font/lato"
+                                android:text="My Orders"
+                                android:layout_weight="1.7"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_orders"
+                            android:background="@color/black_trans"/>
+
+                        <LinearLayout
+                            android:id="@+id/cv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:weightSum="2"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:fontFamily="@font/lato"
+                                android:text="My Address"
+                                android:layout_weight="1.7"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_address"
+                            android:background="@color/black_trans"/>
+
+                        <LinearLayout
+                            android:id="@+id/cv_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/cv_address"
+                            android:weightSum="2"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:fontFamily="@font/lato"
+                                android:text="My Profile"
+                                android:layout_weight="1.7"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_setting"
+                            android:background="@color/black_trans"/>
+
+                        <LinearLayout
+                            android:id="@+id/cv_help"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/cv_policy"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            app:cardCornerRadius="@dimen/payu_dimen_10dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:layout_weight="1.7"
+                                android:fontFamily="@font/lato"
+                                android:text="Help And Support"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_help"
+                            android:background="@color/black_trans"/>
+                        <LinearLayout
+                            android:id="@+id/cv_policy"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/payu_dimen_10dp"
+                            android:weightSum="2"
+                            android:layout_below="@+id/cv_terms"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="Privacy Policy"
+                                android:layout_gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:layout_weight="1.7"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lato"
+                                android:layout_margin="@dimen/payu_dimen_10dp"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_policy"
+                            android:background="@color/black_trans"/>
+
+                        <LinearLayout
+                            android:id="@+id/cv_notify"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/cv_orders"
+                            android:weightSum="2"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:visibility="gone"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:fontFamily="@font/lato"
+                                android:text="Notification"
+                                android:layout_weight="1.7"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/cv_terms"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/payu_dimen_10dp"
+                            android:weightSum="2"
+                            android:layout_below="@+id/cv_notify"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="Terms And Conditions"
+                                android:layout_gravity="center"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:layout_weight="1.7"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lato"
+                                android:layout_margin="@dimen/payu_dimen_10dp"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_terms"
+                            android:background="@color/black_trans"/>
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/cv_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/cv_help"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            app:cardCornerRadius="@dimen/payu_dimen_10dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:layout_weight="1.7"
+                                android:fontFamily="@font/lato"
+                                android:text="About us"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:layout_marginStart="@dimen/payu_dimen_20dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_20dp"
+                            android:layout_below="@+id/cv_about"
+                            android:background="@color/black_trans"/>
+
+                        <LinearLayout
+                            android:id="@+id/cv_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/cv_about"
+                            android:layout_marginStart="@dimen/payu_dimen_10dp"
+                            android:layout_marginTop="@dimen/payu_dimen_10dp"
+                            android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                            android:layout_marginBottom="@dimen/payu_dimen_10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            app:cardCornerRadius="@dimen/payu_dimen_10dp">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/payu_dimen_10dp"
+                                android:layout_weight="1.7"
+                                android:fontFamily="@font/lato"
+                                android:text="Logout"
+                                android:textColor="@color/black"
+                                android:textSize="19sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/payu_dimen_20dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.3"
+                                android:src="@drawable/next" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

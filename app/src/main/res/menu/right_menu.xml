@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_signup"
+        android:enabled="true"
+        android:title="Sign Up"
+        android:icon="@drawable/groceries"
+        />
+    <item
+        android:id="@+id/action_signin"
+        android:enabled="true"
+        android:title="Sign"
+        android:icon="@drawable/groceries"
+        />
+    <item
+        android:id="@+id/action_forgot"
+        android:enabled="true"
+        android:title="Forgot Password"
+        android:icon="@drawable/groceries"
+        />
+
+    <item
+        android:id="@+id/action_change"
+        android:enabled="true"
+        android:title="Change Password"
+        android:icon="@drawable/groceries"
+        android:visible="false"/>
+</menu>

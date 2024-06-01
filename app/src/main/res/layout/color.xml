@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/payu_dimen_10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linearsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="30dp">
+
+
+            <ImageView
+                android:id="@+id/image_category"
+                android:layout_width="50dp"
+                android:visibility="visible"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:src="@drawable/logo"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/txt_catagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fsdasdfasdf"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fsdasdfasdf"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:singleLine="false"
+        android:layout_marginTop="@dimen/payu_dimen_5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</LinearLayout>

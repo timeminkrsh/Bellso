@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+
+android {
+    namespace 'com.taprocycle.service'
+    buildToolsVersion "30.0.3"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.taprocycle.service"
+        minSdk 24
+        targetSdk 34
+        versionCode 6
+        versionName "1.5"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.google.android.play:core:1.10.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    //implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    // Lifecycle components
+    implementation 'com.synnapps:carouselview:0.1.5'
+    implementation 'com.razorpay:checkout:1.6.24'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.0'
+    implementation 'com.viewpagerindicator:parent:2.4.1'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'me.relex:circleindicator:2.1.4@aar'
+    implementation 'com.github.smarteist:autoimageslider:1.3.9'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'com.razorpay:checkout:1.6.12'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+}

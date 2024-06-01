@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taprocycle.service.Activity.AboutUsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/payu_dimen_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="ABOUT US"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAcent"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Who We Are"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Bell Sports India, is a whole new digital sports ecosystem. A one-stop solution for all sporting needs of the entire sports fraternity. We are a retailer who deals with India’s leading branded Cycles, sports Accessories &amp; Equipment’s"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="* Service"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="  Satisfy our customers every time."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="*	Team Work"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="  Collaborate, trust, support, commit."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="*	Innovation"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="  Be a student of the business to initiate and foster new ideas."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="*	Excellence"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="  Strive to be the best in everything we do."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="*	Integrity"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="  Act honestly, ethically, and honourably."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Contact Us"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Bell Sports India"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_15dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Velayuthampalyam, Karur - 639117
+Tamil Nadu India
++91-9159166008"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_15dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Media Relations"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_15dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="WWW.Bellsports.in"
+                android:padding="5dp"
+                android:layout_marginBottom="@dimen/payu_dimen_40dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_15dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.taprocycle.service.Fragment.PhotosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view"
+            android:textSize="32sp"
+            android:text="Specification "
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/progresstop"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_photoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:visibility="gone"
+
+            android:layout_gravity="center"
+            android:scrollbars="none"
+            tools:listitem="@layout/photos_items" />
+
+   </LinearLayout>
+</FrameLayout>

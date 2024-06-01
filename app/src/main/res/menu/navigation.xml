@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/home"
+        />
+        <item
+            android:id="@+id/action_profile"
+            android:enabled="true"
+            android:title="Profile"
+            android:icon="@drawable/profilee"
+            />
+    <item
+        android:id="@+id/action_orders"
+        android:enabled="true"
+        android:title="My Orders"
+        android:icon="@drawable/pacll"
+        />
+    <item
+        android:id="@+id/action_address"
+        android:enabled="true"
+        android:title="My Address"
+        android:icon="@drawable/location"
+        />
+
+
+
+    <item
+        android:id="@+id/action_events"
+        android:enabled="true"
+        android:title="Events"
+        android:icon="@drawable/tabll"
+
+        />
+    <item
+        android:id="@+id/action_help"
+        android:enabled="true"
+        android:title="Help and Support"
+        android:icon="@drawable/support"
+
+        />
+    <item
+        android:id="@+id/action_invitee"
+        android:enabled="true"
+        android:title="Invite Friends"
+        android:icon="@drawable/invitee"
+
+        />
+    <item
+        android:id="@+id/action_about"
+        android:enabled="true"
+        android:title="About Us"
+        android:icon="@drawable/about"
+
+        />
+    <item
+        android:id="@+id/action_log"
+        android:enabled="true"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+
+        />
+    </group>
+</menu>

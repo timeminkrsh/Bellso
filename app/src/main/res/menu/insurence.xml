@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/helth"
+        android:enabled="true"
+        android:title="Health Insurance"
+        />
+    <item
+        android:id="@+id/vehical"
+        android:enabled="true"
+        android:title="Two wheeler / Three wheeler"
+        />
+    <item
+        android:id="@+id/fourwheeler"
+        android:enabled="true"
+        android:title="Four wheeler"
+        />
+
+    <item
+        android:id="@+id/heavy"
+        android:enabled="true"
+        android:title="Heavy vehicle"
+        android:visible="false"/>
+    <item
+        android:id="@+id/Life"
+        android:enabled="true"
+        android:title="Life"
+        android:visible="false"/>
+    <item
+        android:id="@+id/General"
+        android:enabled="true"
+        android:title="General"
+        android:visible="false"/>
+</menu>

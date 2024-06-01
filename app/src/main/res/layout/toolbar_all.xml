@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/colorPrimary">
+<LinearLayout
+    android:id="@+id/arrow_lin"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    >
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/left_arrow" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/arrow_lin"
+        android:fontFamily="@font/lato"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_toLeftOf="@+id/cart"
+        android:src="@drawable/searchnew" />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/trolley" />
+</RelativeLayout>

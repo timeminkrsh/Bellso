@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.taprocycle.service.MyWalletActivity"
+    >
+
+    <include layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/offer_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wallet_img" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet Balance"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/raleway"
+            />
+            <TextView
+                android:id="@+id/wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wallet Balance"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+</RelativeLayout>
+    <TextView
+        android:id="@+id/ss"
+        android:layout_below="@+id/offer_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MORE MONEY START NOW !!!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway"
+        />
+    <TextView
+        android:layout_below="@+id/ss"
+        android:id="@+id/sss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A mobile wallet is a digital way to store credit, debit, ID, and gift cards so that purchases can be made using a mobile smart device rather than a physical card."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway"
+        />
+    <LinearLayout
+        android:layout_below="@+id/sss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_transaction_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:scrollbars="none"
+            tools:listitem="@layout/categorylist" />
+    </LinearLayout>
+
+</RelativeLayout>

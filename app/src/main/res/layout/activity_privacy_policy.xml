@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PrivacyPolicyActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/payu_dimen_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="PRIVACY POLICY"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAcent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Thanks for placing your trust in Bell Sports to handle your personal information. We are committed to protecting your privacy. We have adopted the highest standards for secure transactions and privacy of customer information. Our information gathering and dissemination practices are detailed below. Please note that our privacy policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this policy periodically.
+We only need information related to name, billing and shipping address and phone numbers. We are not in the business of selling personal information. We do not store your credit card or online bank account information.
+"
+                android:padding="5dp"
+                android:layout_marginEnd="@dimen/payu_dimen_5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="COOKIES:"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="A 'cookie' is a small piece of information stored by a Web server on a Web browser so it can be later read back from that browser. Cookies are useful for enabling the browser to remember information specific to a given user. Bell Sports places both permanent and temporary cookies in your computer's hard drive. These will not harm your computer in any way. Bell Sports's cookies do not contain any of your personally identifiable information. It only helps you retrieve your required information faster, and helps us give you more personalised service."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="COLLECTION of PERSONAL INFORMATION:"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="We collect 'personal' information from you when you provide it to us. For example, if you purchase a product from us, we will collect your name, mailing address, telephone number and email address. If you sign up to receive a newsletter, we will collect your email address. If you take advantage of special services offered by us, we may collect other personal information about you. We use your personal information for internal purposes such as processing and to keep you informed of your order."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="USE of DEMOGRAPHIC and PROFILE DATA:"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="We use personal information to provide the services you request. To the extent we use your personal information to market to you, we will provide you the ability to opt-out of such uses. We use your personal information to resolve disputes, troubleshoot problems, help promote a safe service, collect fees owed, measure consumer interest in our products and services, inform you about online and offline offers, products, services, updates, customize your experience, detect and protect us against error, fraud and other criminal activity, enforce our terms and conditions, and as otherwise described to you at the time of collection. In our efforts to continually improve our product and service offerings, we collect and analyse demographic and profile data about our users' activity on our website. We identify and use your IP address to help diagnose problems with our server, and to administer our website. Your IP address is also used to help identify you and to gather broad demographic information. We may occasionally ask you to complete optional online surveys. These surveys may ask you for contact information and demographic information (like pin code/zip code, age or income level). We use this data to tailor your experience at our site, providing you with content that we think you might be interested in and to display content according to your preferences. We will not share your profile information with any other organisation to let them use it for marketing purposes."
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="SHARING of PERSONAL INFORMATION:"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="We may share personal information with other corporate entities and affiliates to help detect and prevent identity theft, fraud and other potentially illegal acts, correlate related or multiple accounts to prevent abuse of our services, and to facilitate joint or co-branded services that you request where such services are provided by more than one corporate entity. Those entities and affiliates may not market to you as a result of such sharing unless you explicitly opt-in. We may disclose personal information if required to do so by law or in the good faith belief that such disclosure is reasonably necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal information to law enforcement offices, third party rights owners, or others in the good faith belief that such disclosure is reasonably necessary to enforce our Terms or Privacy Policy, respond to claims that an advertisement, posting or other content violates the rights of a third party; or protect the rights, property or personal safety of our users or the general public. Bell Sports and its affiliates will share some or all of your personal information with another business entity should we (or our assets) plan to merge with, or be acquired by that business entity. Should such a transaction occur that other business entity (or the new combined entity) will be required to follow this privacy policy with respect to your personal information."
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="OPT-OUT of further usage of PERSONAL INFORMATION:"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="If you are no longer interested in receiving e-mail announcements and other marketing information from us, or you want us to remove any information that we have collected about you, please e-mail your request to Bellsportsales@gmail.com"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="ADVERTISEMENTS on BELL Sports:"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="We use third-party service providers to serve ads on our behalf across the Internet and sometimes on this site. They may collect anonymous information about your visits to our website, and your interaction with our products and services. They may also use information about your visits to this and other websites to target advertisements for goods and services. No personally identifiable information is collected or used in this process. They do not know the name, phone number, address, email address, or any personally identifying information about the user."
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/payu_dimen_10dp"
+                android:layout_marginEnd="@dimen/payu_dimen_10dp"
+                android:layout_marginBottom="@dimen/payu_dimen_40dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

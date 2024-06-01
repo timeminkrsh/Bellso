@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/defaultt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Default" />
+
+            <RadioButton
+                android:id="@+id/price_l_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price -- LOW to HIGH"
+                android:layout_marginTop="10dp" />
+
+            <RadioButton
+                android:id="@+id/price_h_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price -- HIGH to LOW"
+                android:layout_marginTop="10dp" />
+
+            <RadioButton
+                android:id="@+id/newest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Newest First"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
